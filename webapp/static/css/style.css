@@ -1,0 +1,37 @@
+/* HOME PAGE */
+/* Introduction Card */
+.card {
+	background-color: #E7E0F3;	
+}
+
+#intro-image {
+	height: 65%;
+	width: 65%;
+	float: left;
+	padding: 0 5px;
+}
+
+#intro-text-one {
+	margin-left: 10px;
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+#intro-text-two {
+	padding-bottom: 20px;
+}
+
+/* Visualizations Card */
+#visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
+	height: 110%;
+	width: 100%;
+	
+}
+
+#visual-image-one, #visual-image-two {
+	padding-bottom: 25px;
+}
+
+#visual-image-three, #visual-image-four {
+	padding-bottom: 21px;
+}
