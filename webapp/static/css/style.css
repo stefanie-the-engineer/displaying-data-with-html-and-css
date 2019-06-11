@@ -11,21 +11,21 @@
 	padding: 0 5px;
 }
 
-#intro-text-one {
+.card-text {
 	margin-left: 10px;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	word-wrap: break-word;
 }
-
+/*
 #intro-text-two {
-	padding-bottom: 20px;
+	padding-bottom: 18px;
+	margin-bottom: 18px;	
 }
-
+*/
 /* Visualizations Card */
 #visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
 	height: 110%;
 	width: 100%;
-	
 }
 
 #visual-image-one, #visual-image-two {
