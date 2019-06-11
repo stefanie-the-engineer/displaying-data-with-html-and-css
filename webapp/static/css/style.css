@@ -16,6 +16,16 @@
 	word-wrap: break-word;
 }
 
+/* DATA PAGE*/
+/* None */
+
+/* COMPARISONS PAGE */
+/* Cards */
+#compare-image-one, #compare-image-two, #compare-image-three, #compare-image-four {
+	height: 80%;
+	width: 100%;
+	padding-bottom: 5%;
+}
 /* Visualizations Card */
 #visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
 	height: 110%;
@@ -30,9 +40,5 @@
 	padding-bottom: 21px;
 }
 
-/* DATA PAGE*/
-/* None */
-
 /* VISUALIZATIONS PAGE */
 
-/* COMPARISONS PAGE */
