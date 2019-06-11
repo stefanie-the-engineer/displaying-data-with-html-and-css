@@ -13,15 +13,9 @@
 
 .card-text {
 	margin-left: 10px;
-	/*margin-top: 10px;*/
 	word-wrap: break-word;
 }
-/*
-#intro-text-two {
-	padding-bottom: 18px;
-	margin-bottom: 18px;	
-}
-*/
+
 /* Visualizations Card */
 #visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
 	height: 110%;
