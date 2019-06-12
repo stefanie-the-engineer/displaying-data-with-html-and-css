@@ -26,10 +26,12 @@
       			<li class="nav-item dropdown">
         			<a id="plots" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Plots <span class="caret"></span></a>
       				<div class="dropdown-menu">
-      					<a class="dropdown-item" href="#">Maximum Temperature</a>
-      					<a class="dropdown-item" href="#">Cloudiness</a>
-      					<a class="dropdown-item" href="#">Humidity</a>
-      					<a class="dropdown-item" href="#">Wind Speed</a>
+      					<a class="dropdown-item" href="visualization.html">Summary &amp; Information</a>
+      					<div class="dropdown-divider"></div>
+      					<a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+      					<a class="dropdown-item" href="humidity.html">Humidity</a>
+      					<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+      					<a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
       				</div>
       			</li>
     		</ul>
@@ -52,60 +54,66 @@
 <div id="header" class="container">
 	<div class="page-header">
 		</br>
-		<h1 id="comparison">Comparisons</h1>
+		<h1>Comparisons</h1>
 		<hr>
-		<p></p>
+		<p>Below the 4 different variables can be compared to one another. These plots show that some climate variables are more related to the latitude
+		(as locations get closer to the equator) than others.</p>
 		</br>
 	</div>
 </div>
 
 <!-- Page content - Comparison -->
 <div id="comparison" class="container">
-	<div class="row">
-  		<div class="col">
+	<div class="row card-columns">
+    	<div class="col">
     		<div class="card">
       			<div class="card-body">
-        			<h2 class="card-title">Latitude v Max Temp</h2>
+        			<h2 class="card-title">Latitude v Maximum Temperature</h2>
         			<hr>
-        			<img id="compare-image-one" class="img-fluid" src="../static/images/max_temp.png" alt="Latitude v Max Temps">
+        			<figure class="figure">
+  						<img src="../static/images/max_temp.png" class="figure-img img-fluid" alt="Latitude v Maximum Temperature">
+					</figure>
       			</div>
     		</div>
-  		</div>
-  		</br>
-  		<div class="col">
+    	</div>
+    	<div class="col">
     		<div class="card">
       			<div class="card-body">
         			<h2 class="card-title">Latitude v Humidity</h2>
         			<hr>
-        			<img id="compare-image-two" class="img-fluid" src="../static/images/humidity.png" alt="Latitude v Humidity">
+        			<figure class="figure">
+  						<img src="../static/images/humidity.png" class="figure-img img-fluid" alt="Latitude v Humidity">
+					</figure>
       			</div>
-    		</div>
-  		</div>
+    		</div>	
+    	</div>
   	</div>
-  	</br>
-  	<div class="row">
-  		<div class="col">
+  	<div class="row card-columns">
+    	<div class="col">
     		<div class="card">
       			<div class="card-body">
         			<h2 class="card-title">Latitude v Cloudiness</h2>
         			<hr>
-        			<img id="compare-image-three" class="img-fluid" src="../static/images/cloudiness.png" alt="Latitude v Cloudiness">
+        			<figure class="figure">
+  						<img src="../static/images/cloudiness.png" class="figure-img img-fluid" alt="Latitude v Cloudiness">
+					</figure>
       			</div>
-    		</div>
-  		</div>
-  		</br>
-  		<div class="col">
+    		</div>	    
+    	</div>
+    	<div class="col">
     		<div class="card">
       			<div class="card-body">
         			<h2 class="card-title">Latitude v Wind Speed</h2>
         			<hr>
-        			<img id="compare-image-four" class="img-fluid" src="../static/images/wind_speed.png" alt="Latitude v Wind Speed">
+        			<figure class="figure">
+  						<img src="../static/images/wind_speed.png" class="figure-img img-fluid" alt="Latitude v Wind Speed">
+					</figure>
       			</div>
-    		</div>
-  		</div>
+    		</div>	
+    	</div>
   	</div>
 </div>
-	
+
 <!-- Footer -->
 <footer id="footer">
 	</br>

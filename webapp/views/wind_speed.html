@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Climate Visualizations Home</title>
+<title>Latitude Wind Speed Analysis</title>
 <link rel="stylesheet" href="../static/css/bootstrap.min.css">
 <link rel="stylesheet" href="../static/css/style.css">
 </head>
@@ -54,34 +54,28 @@
 <div id="header" class="container">
 	<div class="page-header">
 		</br>
-		<h1>Visualization Summary Analysis</h1>
+		<h1>Visualization Wind Speed Analysis</h1>
 		<hr>
 		</br>
 	</div>
 </div>
 
-<!-- Page content - Summary analysis -->
-<div id="visualization" class="container">
+<!-- Page content - Wind speed analysis -->
+<div id="wind-speed" class="container">
 	<div class="row card-columns">
   		<div class="col-sm-8">
     		<div class="card">
       			<div class="card-body">
-        			<h2 class="card-title">Latitude &amp; General Information</h2>
+        			<h2 class="card-title">Latitude &amp; Wind Speed</h2>
         			<hr>
-        			<p id="visual-text" class="card-text">This project tested the relationship between the latitude as we approach the equator and four different climate variables. Those 4 climate variables are wind speed,
-        			humidity, maximum temperature and cloudiness. As expected, some of the variables tested show a stronger relationship to the latitude than others. For example, generally a location closer to the equator will
-        			show a higher maximum temperature. But by using the Python APIs and OpenWeather API, the relationship between the maximum temperature and a latitude closer to the equator could be shown. But there are other
-        			climate variables such as wind speed, cloudiness and humidity is not as well known.
+        			<img id="wind-image" class="img-fluid" src="../static/images/wind_speed.png" alt="Latitude v Wind Speed">
+        			<p id="wind-text" class="card-text">The scatter plot shows that the wind speed is relatively even around the entire latitude range. Most of the wind speeds tend to run mostly from the
+        			0 to 20 mph (miles per hour) range at the -80 to 80 latitudes. There are some wind speed outliers in the middle northern hemisphere where the wind speeds was recorded at 30 mph or slightly
+        			higher (below 40 mph). But no conclusion can be reached regarding the increase in wind speed as the locations get closer to the equator.
         			</br></br>
-        			The process involved obtaining the latitude and longitude and using the Python APIs to get the closest city to that latitude and longitude combination. Then by using the OpenWeather API, the weather and
-        			climate information was obtained. The sample size consisted of over 500 cities from around the world. Then by using Matplotlib, the 4 scatter plots were generated. Some of the scatter plots show greater
-        			randomness than others. The maximum temperature variable scatter plot is not as randomized as some of the other plots.
-        			</br></br>
-        			The 4 plots show the date of 01/05/2017. Knowing that there are over 500 cities from around the world, both the southern hemisphere and the northern hemisphere. So it is also very important to remember that
-        			the 01/05/2017 date corresponds to the winter season in the northern hemisphere and the summer season in the southern hemisphere.
-        			</br></br>
-        			You can click on any of the four plots to the right which will give you a more in depth analysis of the 4 variables that were tested. There you will see which plots show greater randomness and those that show
-        			less randomness.</p>
+        			Since the equator is tropical which is usually associated with heavy storms that include high wind speeds, that the wind speed around the equator is roughly the same around the rest of the latitude
+        			range. But also remember that the data obtained only includes cities on land. Most of the tropical storms form in bodies of water which are not included in this data set. Once these storms reach land
+        			they lose their strength.</p>
       			</div>
     		</div>
   		</div>
@@ -135,6 +129,6 @@
 <!-- ===== JavaScript placed at the end of the HTML to help the page load faster ===== -->
 <script src="../static/js/jquery-3.4.1.slim.min.js"></script>
 <script src="../static/js/popper.min.js"></script>
-<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>    
 </body>
 </html>

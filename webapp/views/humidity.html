@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Climate Visualizations Home</title>
+<title>Latitude Humidity Analysis</title>
 <link rel="stylesheet" href="../static/css/bootstrap.min.css">
 <link rel="stylesheet" href="../static/css/style.css">
 </head>
@@ -54,34 +54,25 @@
 <div id="header" class="container">
 	<div class="page-header">
 		</br>
-		<h1>Visualization Summary Analysis</h1>
+		<h1>Visualization Humidity Analysis</h1>
 		<hr>
 		</br>
 	</div>
 </div>
 
-<!-- Page content - Summary analysis -->
-<div id="visualization" class="container">
+<!-- Page content - Humidity analysis -->
+<div id="humidity" class="container">
 	<div class="row card-columns">
   		<div class="col-sm-8">
     		<div class="card">
       			<div class="card-body">
-        			<h2 class="card-title">Latitude &amp; General Information</h2>
+        			<h2 class="card-title">Latitude &amp; Humidity</h2>
         			<hr>
-        			<p id="visual-text" class="card-text">This project tested the relationship between the latitude as we approach the equator and four different climate variables. Those 4 climate variables are wind speed,
-        			humidity, maximum temperature and cloudiness. As expected, some of the variables tested show a stronger relationship to the latitude than others. For example, generally a location closer to the equator will
-        			show a higher maximum temperature. But by using the Python APIs and OpenWeather API, the relationship between the maximum temperature and a latitude closer to the equator could be shown. But there are other
-        			climate variables such as wind speed, cloudiness and humidity is not as well known.
+        			<img id="humidity-image" class="img-fluid" src="../static/images/humidity.png" alt="Latitude v Humidity">
+        			<p id="humidity-text" class="card-text">The City Latitude v Humidity scatter plot is showing randomness which indicates that there is not much of a relationship between the latitude and humidity. But there is a slight
+        			concentration of points in the northern hemisphere than there are in the southern hemisphere. 
         			</br></br>
-        			The process involved obtaining the latitude and longitude and using the Python APIs to get the closest city to that latitude and longitude combination. Then by using the OpenWeather API, the weather and
-        			climate information was obtained. The sample size consisted of over 500 cities from around the world. Then by using Matplotlib, the 4 scatter plots were generated. Some of the scatter plots show greater
-        			randomness than others. The maximum temperature variable scatter plot is not as randomized as some of the other plots.
-        			</br></br>
-        			The 4 plots show the date of 01/05/2017. Knowing that there are over 500 cities from around the world, both the southern hemisphere and the northern hemisphere. So it is also very important to remember that
-        			the 01/05/2017 date corresponds to the winter season in the northern hemisphere and the summer season in the southern hemisphere.
-        			</br></br>
-        			You can click on any of the four plots to the right which will give you a more in depth analysis of the 4 variables that were tested. There you will see which plots show greater randomness and those that show
-        			less randomness.</p>
+        			One would think that the humidity increases as a location gets closer to the equator because many believe that humidity is associated with the tropical areas. But this data set does not support that hypothesis.</p>
       			</div>
     		</div>
   		</div>
@@ -135,6 +126,6 @@
 <!-- ===== JavaScript placed at the end of the HTML to help the page load faster ===== -->
 <script src="../static/js/jquery-3.4.1.slim.min.js"></script>
 <script src="../static/js/popper.min.js"></script>
-<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>    
 </body>
 </html>

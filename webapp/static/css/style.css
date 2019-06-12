@@ -1,44 +1,33 @@
-/* HOME PAGE */
-/* Introduction Card */
+/* ALL */
 .card {
 	background-color: #E7E0F3;	
 }
 
+/* HOME PAGE */
 #intro-image {
-	height: 65%;
-	width: 65%;
-	float: left;
-	padding: 0 5px;
+	height: 200px;
+	width: 200px;
+	margin-right: 5px;
 }
 
 .card-text {
-	margin-left: 10px;
+    margin-left: 5px;
 	word-wrap: break-word;
+}
+
+/* VISUALIZATION PAGE, MAXIMUM TEMPERATURE PAGE, HUMIDITY PAGE, CLOUDINESS PAGE, WIND SPEED PAGE */
+#visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
+	width: 100%;
+	height: auto;
+}
+
+/* MAXIMUM TEMPERATURE PAGE, HUMIDITY PAGE, CLOUDINESS PAGE, WIND SPEED PAGE */
+#temp-text, #humidity-text, #cloudiness-text, #wind-text {
+	margin-top: 5px;	
 }
 
 /* DATA PAGE*/
 /* None */
 
 /* COMPARISONS PAGE */
-/* Cards */
-#compare-image-one, #compare-image-two, #compare-image-three, #compare-image-four {
-	height: 80%;
-	width: 100%;
-	padding-bottom: 5%;
-}
-/* Visualizations Card */
-#visual-image-one, #visual-image-two, #visual-image-three, #visual-image-four {
-	height: 110%;
-	width: 100%;
-}
-
-#visual-image-one, #visual-image-two {
-	padding-bottom: 25px;
-}
-
-#visual-image-three, #visual-image-four {
-	padding-bottom: 21px;
-}
-
-/* VISUALIZATIONS PAGE */
-
+/* None */

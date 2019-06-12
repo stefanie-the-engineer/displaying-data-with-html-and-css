@@ -26,10 +26,12 @@
       			<li class="nav-item dropdown">
         			<a id="plots" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Plots <span class="caret"></span></a>
       				<div class="dropdown-menu">
-      					<a class="dropdown-item" href="#">Maximum Temperature</a>
-      					<a class="dropdown-item" href="#">Cloudiness</a>
-      					<a class="dropdown-item" href="#">Humidity</a>
-      					<a class="dropdown-item" href="#">Wind Speed</a>
+      				<a class="dropdown-item" href="visualization.html">Summary &amp; Information</a>
+      					<div class="dropdown-divider"></div>
+      					<a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+      					<a class="dropdown-item" href="humidity.html">Humidity</a>
+      					<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+      					<a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
       				</div>
       			</li>
     		</ul>
@@ -52,7 +54,7 @@
 <div id="header" class="container">
 	<div class="page-header">
 		</br>
-		<h1 id="home">The Latitude Project</h1>
+		<h1>The Latitude Project</h1>
 		<hr>
 		</br>
 	</div>
@@ -60,42 +62,58 @@
 
 <!-- Page content - Introduction -->
 <div id="introduction" class="container">
-	<div class="row">
-  		<div class="col-sm-6">
+	<div class="row card-columns">
+  		<div class="col">
     		<div class="card">
       			<div class="card-body">
         			<h2 class="card-title">Latitude v Climate Variables</h2>
         			<hr>
-        			<img id="intro-image" class="img-fluid" src="../static/images/max_temp.png" alt="Latitude v Max Temps">
+        			<img id="intro-image" class="img-thumbnail float-left" src="../static/images/max_temp.png" alt="Latitude v Max Temps">
         			<p id="intro-text" class="card-text">In this project, we analyzed how wind speed, humidity, maximum temperature and cloudiness
         			relate to the Earth's latitude. We generated latitude and longitude values of no less than 500 locations and matched them to the closest city using Python APIs
-        			and then used the OpenWeather API to get the weather conditions of those cities. When we used Pandas to process the data and then plotted them using Matplotlib.From here we looked at the relationships
-        			between latitude and cloudiness, humidity, wind speed and maximum temperatures.</p>
+        			and then used the OpenWeather API to get the weather conditions of those cities. 
+        			</br></br>
+        			Then we used Pandas to process the data and then plotted them using Matplotlib. From here we looked at the relationships
+        			between latitude and cloudiness, humidity, wind speed and maximum temperatures.
+        			</br></br>
+        			Feel free to explore the analyses performed and the data that was used to draw our conclusions. Here you can see the data table, compare the different plots at
+        			once one page, go to the general visualizations page ("Home" page for the visualizations) and individual pages for each of the plots with more specific analyses
+        			and conclusions.</p>
       			</div>
     		</div>
   		</div>
-  		<div class="col-sm-6">
+  		<div class="col">
     		<div class="card">
       			<div class="card-body">
         			<h2 class="card-title">Visualizations</h2>
         			<hr>
-        			<div class="row">
-        				<div class="col-sm-6">
-        					<img id="visual-image-one" class="img-fluid" src="../static/images/max_temp.png" alt="Latitude v Max Temps">
-        				</div>
-        				<div class="col-sm-6">
-        					<img id="visual-image-two" class="img-fluid" src="../static/images/cloudiness.png" alt="Latitude v Cloudiness">
-        				</div>
-        			</div>
-        			<div class="row">
-        				<div class="col-sm-6">
-        					<img id="visual-image-three" class="img-fluid" src="../static/images/humidity.png" alt="Latitude v Humidity">
-        				</div>
-        				<div class="col-sm-6">
-        					<img id="visual-image-four" class="img-fluid" src="../static/images/wind_speed.png" alt="Latitude v Wind Speed">
-        				</div>
-        			</div>
-      			</div>
+        			<div class="thumbnail-content">
+  						<div class="row">
+    						<div class="col">
+    							<figure class="figure">
+  									<img src="../static/images/max_temp.png" class="figure-img img-fluid" alt="Latitude v Maximum Temperature">
+								</figure>
+    						</div>
+    						<div class="col">
+    							<figure class="figure">
+  									<img src="../static/images/humidity.png" class="figure-img img-fluid" alt="Latitude v Humidity">
+								</figure>
+    						</div>
+  						</div>
+  						<div class="row">
+    						<div class="col">
+    						    <figure class="figure">
+  									<img src="../static/images/cloudiness.png" class="figure-img img-fluid" alt="Latitude v Cloudiness">
+								</figure>
+    						</div>
+    						<div class="col">
+    							<figure class="figure">
+  									<img src="../static/images/wind_speed.png" class="figure-img img-fluid" alt="Latitude v Wind Speed">
+								</figure>
+    						</div>
+  						</div>
+					</div>
+				</div>	
     		</div>
   		</div>
 	</div>
